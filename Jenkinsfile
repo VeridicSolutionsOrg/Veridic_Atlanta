@@ -1,8 +1,8 @@
 node {
-Stage "build"
-Echo "jenkins"
-Stage "test"
-Echo "test successful"
-Stage "deployment"
-Echo "deployment Sucessful"
+stage "build"
+echo "jenkins"
+stage "test"
+echo "test successful"
+stage "deployment"
+echo "deployment Sucessful"
 }
