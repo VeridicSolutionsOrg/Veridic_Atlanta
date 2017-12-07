@@ -1,7 +1,7 @@
 
 pipeline {
     agent any 
-
+triggers{build 'sss'}
     stages {
         stage('Build') { 
             steps { 
