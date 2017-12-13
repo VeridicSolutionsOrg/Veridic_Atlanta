@@ -5,13 +5,20 @@ pipeline {
 
 	stages {
 	   stage('Build') {
-	   	sh 'pwd'
-		}
+	   	steps { 
+	   		sh 'pwd'
+	        }
+	   }
+		
 	   stage('Test') {
-	   	sh 'ls'
+	   	steps {
+			sh 'ls'
 		}
+	   }	
 	   stage('Deploy') {
-	   	sh 'java -version'
+	   	steps{
+			sh 'java -version'
 		}
-	     }
-	  }
+	   }
+      }
+}	 
